@@ -81,6 +81,11 @@ public enum OrderStatus
 }
 ```
 
+Of course, you can also use the NuGet tools within Rider/VS
+```csharp
+dotnet add package HotChocolate.AspNetCore
+```
+
 ```csharp
 public class OrderQuery
 {
