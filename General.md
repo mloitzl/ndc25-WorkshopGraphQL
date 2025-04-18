@@ -212,7 +212,7 @@ query getOrdersById {
 }
 ```
 
-```
+```graphql
 query getOrdersById($id: Int!) {
   orderById(id: $id){
     id
@@ -229,7 +229,7 @@ query getOrdersById($id: Int!) {
 }
 ```
 
-```
+```graphql
 fragment orderInfo on Order {
   id
   customer {
@@ -247,7 +247,7 @@ fragment orderInfo on Order {
 ```
 
 I did give the first query a name as well
-```
+```graphql
 query getAllOrders {
   allOrders {
     ...orderInfo
