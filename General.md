@@ -82,7 +82,7 @@ public enum OrderStatus
 ```
 
 Of course, you can also use the NuGet tools within Rider/VS
-```csharp
+```shell
 dotnet add package HotChocolate.AspNetCore
 ```
 
