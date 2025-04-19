@@ -177,6 +177,11 @@ builder.Services.AddGraphQLServer()
 app.MapGraphQL();
 ```
 
+Update your launchsettings to automatically start Nitro (GraphQL test environment). Do this for both http and https.
+```json
+"launchUrl": "graphql",
+```
+
 ```graphql
 query {
   allOrders {
