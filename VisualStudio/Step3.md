@@ -104,7 +104,7 @@ public IEnumerable<Order> GetAllOrders()
 ```
 
 ## Register GraphQL services
-For GraphQL to work, you need to register the GraphQL services and specify that you want to use the OrderQuery class as the Query for this server. Add the following code before the line with builder.Build().
+For GraphQL to work, you need to register the GraphQL services and specify that you want to use the OrderQuery class as the Query for this server. Add the following code before the line with builder.Build() to achieve both these things.
 
 ```csharp
 builder.Services.AddGraphQLServer()
@@ -119,6 +119,16 @@ app.MapGraphQL();
 ```
 
 This code will map the endpoint /graphql to your GraphQL code.
+
+## Set the GraphQL endpoint as default for the project
+
+When building a GraphQL server, you will have to build and run the test environment many timees. Therfore it is convenient to register the GraphQL endpoint as default page to open when debugging the application. Add the following code to the lauchsettings.json file for the http and https endpoint.
+
+```json
+"launchUrl": "graphql",
+```
+
+
 
 
 
