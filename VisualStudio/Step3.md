@@ -1,4 +1,4 @@
-# Step 3
+# Step 3 Create basic GraphQL Server
 In this step you are going to create a very basic GraphQL server using HotChocolate for the classes you created in [Step 2](Step2.md).
 
 ## Register NuGet package

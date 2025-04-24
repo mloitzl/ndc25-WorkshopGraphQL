@@ -1,4 +1,4 @@
-# Step 1
+# Step 1 Create project
 In this step you are going to create an empty ASP.NET Core project to base the server on.
 
 

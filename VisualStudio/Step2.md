@@ -1,4 +1,4 @@
-# Step 2
+# Step 2 Create Model classes
 In this step you are going to create the domain classes needed for this workshop.
 
 ## Create model directory
