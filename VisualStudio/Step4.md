@@ -11,7 +11,42 @@ To start creating a query, select the Create Document button.
 
 ## Gnerated schema
 
+![Generated schema for query](./images/Schema%20main%20window.png)
+
+![Generated schema for query method](./images/allOrders%20Schema.png)
+
+![Generated schema for order](./images/Order%20schema.png)
 
 ## Create order query
+
+
+```graphql
+query {
+  allOrders {
+  }
+}
+```
+
+
+```graphql
+query {
+  allOrders {
+    customer {
+      name
+    }
+    orderLines{
+      product {
+        name
+      }
+      quantity
+    }
+  }
+}
+```
+
+
+```
+
+![Result for query](./images/Output%20first%20query.png)
 
 
