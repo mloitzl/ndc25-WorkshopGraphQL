@@ -1,5 +1,5 @@
 # Step 5
-In this step you wil extend your query class to support fetching a single order by id
+Many API's need the ability to fetch an object by id. GraphQL does support this as well. There are a few ways to achive this. In this step you wil extend your query class to support fetching a single order by id
 
 
 ```csharp
@@ -44,7 +44,7 @@ query getOrdersById($id: Int!) {
     }
   }
 }
-
+```
 
 ![Query with parameter](./images/With%20passed%20parameter.png)
 

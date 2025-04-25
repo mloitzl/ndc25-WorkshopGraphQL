@@ -14,6 +14,7 @@ To keep the GraphQL code seperate from the rest of the code, you will have to cr
 
 ## Query class
 Fetching data can be done in GraphQL through a so called Query-class. This is a normal POCO class that does not require you to implement an interface or apply an attribute.
+
 In the folder you just created, create a new class named OrderQuery and make sure the code looks like the code shown below.
 
 ```csharp

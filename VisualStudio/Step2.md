@@ -44,6 +44,7 @@ public class Product
 }
 ```
 
+Now we have the supporting classed in place, we can focus on the Order specific class. First, add the OrderLine class to the project. Youo will integrate Entity Framework later in the workshop, so we already take this into account when creating the code for this OrderLine. So, we add both the Id and the reference to the Product class and the yet to be built Order class. In this code we suppress the nullablity check. 
 
 ```csharp
 namespace ShopAPI.Model;
@@ -66,6 +67,8 @@ public class OrderLine
 }
 ```
 
+The Order class can be added next. The reference to Customer will be handled later on by Entity Framework, so we suppress this nullability check for now. 
+
 ```csharp
 namespace ShopAPI.Model;
 
@@ -84,6 +87,8 @@ public class Order
 }
 ```
 
+The only thing that is missing from our domain classes is the enumeration for OrderStatus. 
+
 ```csharp
 namespace ShopAPI.Model;
 
@@ -97,4 +102,9 @@ public enum OrderStatus
     RETURNED
 }
 ```
+
+Your model folder should now look like this.
+
+ ![Models folder with models added](./images/Models%20code.png)
+
 
