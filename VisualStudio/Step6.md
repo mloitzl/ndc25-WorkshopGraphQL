@@ -2,6 +2,10 @@
 
 In [step 4](./Step4.md) and [Step 5](./Step5.md) you have create a basic query. Both queries returned the same field and the definition for the fields was duplicated for one query to the next. This is of course not very maintainable. Fortunately, GraphQL has a solution for this in the form of fragments.
 
+When specifying a fragment you need to specify for which type the fragment should work. The body of the fragments contains all the fields that you want to return.
+
+Copy the following fragment to your request pane.
+
 ```graphql
 fragment orderInfo on Order {
   id
@@ -19,7 +23,8 @@ fragment orderInfo on Order {
 }
 ```
 
-I did give the first query a name as well
+The fragment can be be used inside the query by using the … construction. In the code below our first query is given a name now as well. Update your queries to match the ones below.
+
 ```graphql
 query getAllOrders {
   allOrders {
@@ -34,3 +39,5 @@ query getOrdersById($id: Int!) {
 }
 
 ```
+
+If you now run the queries, you should get the same results as before.

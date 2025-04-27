@@ -23,7 +23,7 @@ When you click on the Order type, the details of the schema for Order are shown.
 
 ![Generated schema for order](./images/Order%20schema.png)
 
-Every field has it own type specified, and you could drill further into the types by clicking on the links. If you want to know more about the GraphQL schema language, you can visit https://graphql.org/learn/schema/.
+Every field has it own type specified, and you could drill further into the types by clicking on the links. GraphQL supports scalar types and object types. If you want to know more about the GraphQL schema language, you can visit https://graphql.org/learn/schema/.
 
 ## Create order query
 
@@ -43,7 +43,7 @@ query {
 
 GraphQL allows naming a query by specifying a name after the query keyword. However, if you only have one query in the request pane, naming is not required. You will use the named query option later in the workshop.
 
-After the curly bracket you must specify the fields that you want to have returned by the query. This allows you to control the data that is returned from the service, so you can prevent overfetching fields that are not of interest to us.
+After the curly bracket you must specify the fields that you want to have returned by the query. This allows you to control the data that is returned from the service, so you can prevent overfetching fields that are not of interest to you.
 
 ```graphql
 query {
@@ -61,8 +61,14 @@ query {
 }
 ```
 
-If you run this query, you should get output similar to the following picture.
+Your Request pane now should now look like this.
+
+![Request pane](./images/First%20query%20request%20pane.png)
+
+If you run this query by hitting the Run button, you should get output similar to the following picture.
 
 ![Result for query](./images/Output%20first%20query.png)
+
+Since the test environment allows code completion, simply try to change the query to include the OrderStatus and OrderTime.
 
 
