@@ -1,5 +1,17 @@
-# The end
+# Step 12 Adding paging
 
-Congratulations, in the last few hours you have written a working basic GraphQL server. You can be proud of yourself.
+Many client applications do support paging in the user interface. So, it is good to provide support for paging in the service as well. 
+Paging in the current version of HotChocolate is based around streaming. In modern user interfaces this pattern is use more than the navigate by page number approach. In older version the default support for paging was using the skip and take pattern. 
 
-Of course, there is a lot more to learn. You can add update functionality to the server by using mutation. You can even signal for changes using subscriptions. In demo code there is normally not a lot of focus on the security aspects of the code, but of course, when writing a public facing GraphQL api, this is really necessary. I hope the workshop has given you enough confidence to start exploring these topic when you get back home. And of course, you can always contact me at @johansmarius (both on Twitter/X and on Bluesky)
+## Change the code
+
+Adding support for paging only requires adding the attribute UsePaging to the method.
+
+```csharp
+[UsePaging(DefaultPageSize = 1)]
+[UseProjection]
+[UseFiltering]
+[UseSorting]
+public IQueryable<Order> GetOrders(OrderContext orderContext) => orderContext.Orders;
+```
+
