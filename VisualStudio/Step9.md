@@ -35,13 +35,20 @@ query allOrdersFiltering {
 }
 ```
 
+Just like SQL the where keyword is used to indicate that you want to filter the results. And and or filters and a combination of these are allowed. 
+A lot of operators to check for equality and boundaries are supported. 
 
+If you want to learn more about the rich possibilities please check https://chillicream.com/docs/hotchocolate/v15/fetching-data/filtering.
+
+Run the query and verify that the result looks like this.
 
 ![Query output](./images/Filtering%20output.png)
 
-https://chillicream.com/docs/hotchocolate/v15/fetching-data/filtering
+Check the Output window. You can see that the query sent to the database does use the filter.
 
 ![Query logging for filtering](./images/Filtering%20works.png)
+
+
 
 
 
