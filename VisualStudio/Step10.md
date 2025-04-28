@@ -44,4 +44,8 @@ Verify that your results look this this.
 In the Output window you can see that the sorting is actually being done in the database. 
 ![Sort query](./images/Sort%20query.png)
 
+## Extra excercise
+
+Change the query so that the results are sorted by descending orderTime.
+
 [Next step](./Step11.md)

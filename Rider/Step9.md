@@ -48,6 +48,10 @@ Check the Output window. You can see that the query sent to the database does us
 
 ![Query logging for filtering](./images/Filtering%20works.png)
 
+## Extra excercise
+
+Add a query to select only these order where all orderlines contain more than 5 items.
+
 [Next step](./Step10.md)
 
 
