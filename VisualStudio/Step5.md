@@ -83,6 +83,4 @@ You can specify the parameter value to pass to the query, in the Variables pane.
 
 Run the query again and verify that the same result is produced.
 
-In the [Next step](./Step6.md) you will remove the code duplication in the queries.
-
 [Next step](./Step6.md)
