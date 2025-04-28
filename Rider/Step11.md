@@ -85,6 +85,9 @@ query allOrdersSorted {
 If you now run this query, you will get an output simular to the following picture.
 ![Output page 2](./images/Result%20pages%20page%202.png)
 
+## Extra excercise
+
+Add a query to return the previous page.
 
 
 [Next step](./Step12.md)
