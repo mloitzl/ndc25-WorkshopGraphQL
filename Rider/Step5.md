@@ -44,11 +44,12 @@ query getOrdersById {
 ```
 
 An individual query can be run by clicking the Run button above the query.
+
 ![Run single query option 1](./images/Run%20single%20query.png)
 
 You can also do this by selecting the query by choosing the correct one in the dropdown list next to the run button at the top of the pane.
 
-![Run single query option 2](./images/Select%20individual%20query.pngq)
+![Run single query option 2](./images/Select%20individual%20query.png)
 
 Run this query and verify that the result looks like this image.
 
