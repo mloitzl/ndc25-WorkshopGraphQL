@@ -106,6 +106,7 @@ builder.Services.AddGraphQLServer()
 ## Migrations
 
 To start working with our database, we need to generate an initial migration. We will use the package management console for this. Open this console.
+
 ![Package Manager Console](./images/Package%20managar%20console.png)
 
 Execute the following command in this console.
