@@ -86,6 +86,6 @@ If you now run this query, you will get an output simular to the following pictu
 ![Output page 2](./images/Result%20pages%20page%202.png)
 
 
-
+[Next step](./Step12.md)
 
 

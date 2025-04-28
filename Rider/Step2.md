@@ -107,4 +107,6 @@ Your model folder should now look like this.
 
  ![Models folder with models added](./images/Finished%20model%20code.png)
 
+[Next step](./Step3.md)
+
 

@@ -41,3 +41,5 @@ query getOrdersById($id: Int!) {
 ```
 
 If you now run the queries, you should get the same results as before.
+
+[Next step](./Step7.md)

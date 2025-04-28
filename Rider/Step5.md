@@ -83,3 +83,5 @@ You can specify the parameter value to pass to the query, in the Variables pane.
 
 Run the query again and verify that the same result is produced.
 
+[Next step](./Step6.md)
+

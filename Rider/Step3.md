@@ -129,6 +129,8 @@ When building a GraphQL server, you will have to build and run the test environm
 "launchUrl": "graphql",
 ```
 
+[Next step](./Step4.md)
+
 
 
 

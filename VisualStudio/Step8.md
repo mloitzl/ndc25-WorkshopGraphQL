@@ -37,3 +37,5 @@ Check in the Output window that no overfetching takes place any more.
 ![No overfetching](./images/No%20overfetching.png)
 
 So now we not only do not transmit unnecessary information over the wire, but we also do not fetch this information from the database.
+
+[Next step](./Step9.md)

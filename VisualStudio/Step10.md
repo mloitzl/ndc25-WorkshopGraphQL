@@ -43,3 +43,5 @@ Verify that your results look this this.
 
 In the Output window you can see that the sorting is actually being done in the database. 
 ![Sort query](./images/Sort%20query.png)
+
+[Next step](./Step11.md)

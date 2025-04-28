@@ -159,5 +159,5 @@ Now check the logging in the Output window of Visual Studio. You should see some
 
 All the fields from the the database are still retrieved from the database, so there is still overfetching taking place. You are going to fix this in the [next step](./Step8.md).
 
-
+[Next step](./Step8.md)
 

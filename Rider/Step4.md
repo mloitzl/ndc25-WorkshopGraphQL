@@ -71,4 +71,6 @@ If you run this query by hitting the Run button, you should get output similar t
 
 Since the test environment allows code completion, simply try to change the query to include the OrderStatus and OrderTime.
 
+[Next step](./Step5.md)
+
 
