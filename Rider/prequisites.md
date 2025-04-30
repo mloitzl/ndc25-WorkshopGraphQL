@@ -1,8 +1,8 @@
-# Prequisites
-To be able to build the GraphQL service, you need to have the Web-workload installed in rider.
+# Prerequisites
+To be able to build the GraphQL service, you need to have Rider installed with the Web Development plugin enabled.
 
-![Install templates](./images/Install%20templates.png)
+![Web Development Plugin](./images/Web%20Development%20Plugin.png)
 
-And the code is based on .NET 9, so if you do not have this version installed, I would recommend to do this before starting the workshop.
+The code is based on .NET 9, so if you do not have this version installed, I would recommend doing this before starting the workshop.
 
-Well let's start building the [GraphQL Server](./Step1.md).
+Well, let's start building the [GraphQL Server](./Step1.md).

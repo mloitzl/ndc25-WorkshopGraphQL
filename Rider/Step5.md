@@ -1,6 +1,6 @@
 # Step 5
 
-Many API's need the ability to fetch an object by id. There are a few ways to achive this. In this step you wil extend your query class to support fetching a single order by id
+Many APIs need the ability to fetch an object by ID. There are a few ways to achieve this. In this step, you will extend your query class to support fetching a single order by ID.
 GraphQL also supports passing parameters to a query. To demonstrate this, we are going to build a new query method to return an order based on it’s Id. This is just for demo purposes. In a real-life service, you would solve this in a different way. We will get to this later in the workshop.
 
 ## Update code
@@ -13,7 +13,7 @@ public Order GetOrderById(int id)
     return GenerateTestOrders().Single(order => order.Id == id);
 }
 ```
-The Single ensures that only 1 record can ever be retrieved from the collection. Since the id field can be considered to be the primary key this will hold true for this workshop. You could of course also use the SingleOrDefault, to make sure that you can return an empty result if an id is passed that is not present in our collection. For a production API, I would really recommend this, but since this is a demmo project, just Single will do.
+The Single ensures that only 1 record can ever be retrieved from the collection. Since the id field can be considered to be the primary key this will hold true for this workshop. You could of course also use the SingleOrDefault, to make sure that you can return an empty result if an id is passed that is not present in our collection. For a production API, I would really recommend this, but since this is a demo project, just `Single` will do.
 
 We do not need to change anything in program.cs for this to work. All we have to do is run the application again.
 

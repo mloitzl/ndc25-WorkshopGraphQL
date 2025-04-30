@@ -1,5 +1,6 @@
-# Step 1 Create project
-In this step you are going to create an empty ASP.NET Core project to base the server on.
+# Step 1: Create Project
+
+In this step, you are going to create an empty ASP.NET Core project to base the server on.
 
 
 ## Fork the repository to your own GitHub
@@ -14,7 +15,7 @@ The description in this workshop uses the project name ShopAPI, so create a proj
 
 ![Basic project settings](./images/Project%20settings%20VS.png)
 
-In the additional settings you should select .NET 9 as the framework. We are not going to use containers or .NET ASpire in the workshop, so leave these settings unchecked.
+In the additional settings, you should select .NET 9 as the framework. We are not going to use containers or .NET Aspire in the workshop, so leave these settings unchecked.
 
 ![Additionl settings](./images/Additional%20settings.png)
 

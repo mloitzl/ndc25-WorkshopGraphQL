@@ -1,6 +1,6 @@
-# Step 6 Working with GraphQL fragments
+# Step 6: Working with GraphQL Fragments
 
-In [step 4](./Step4.md) and [Step 5](./Step5.md) you have create a basic query. Both queries returned the same field and the definition for the fields was duplicated for one query to the next. This is of course not very maintainable. Fortunately, GraphQL has a solution for this in the form of fragments.
+In [Step 4](./Step4.md) and [Step 5](./Step5.md), you have created a basic query. Both queries returned the same fields, and the definition for the fields was duplicated from one query to the next. This is, of course, not very maintainable. Fortunately, GraphQL has a solution for this in the form of fragments.
 
 When specifying a fragment you need to specify for which type the fragment should work. The body of the fragments contains all the fields that you want to return.
 
@@ -23,7 +23,7 @@ fragment orderInfo on Order {
 }
 ```
 
-The fragment can be be used inside the query by using the … construction. In the code below our first query is given a name now as well. Update your queries to match the ones below.
+The fragment can be used inside the query by using the `...` construction. In the code below, our first query is given a name now as well. Update your queries to match the ones below.
 
 ```graphql
 query getAllOrders {

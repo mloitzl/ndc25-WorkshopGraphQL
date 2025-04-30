@@ -1,6 +1,6 @@
-# Step 7: Add EF Core support
+# Step 7: Add EF Core Support
 
-Most services do need some kind of data storage to work. In this workshop you will be using Entity Framework Core in combination with SqlLite for this. SqlLite works cross platform and is therefor better suited to support Windows, Mac and Linux users. In this workshop we don’t enforce a certain operating system.
+Most services do need some kind of data storage to work. In this workshop, you will be using Entity Framework Core in combination with SQLite for this. SQLite works cross-platform and is therefore better suited to support Windows, Mac, and Linux users. In this workshop, we don’t enforce a certain operating system.
 
 ## Install NuGet packages
 

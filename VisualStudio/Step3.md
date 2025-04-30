@@ -1,5 +1,6 @@
-# Step 3 Create basic GraphQL Server
-In this step you are going to create a very basic GraphQL server using HotChocolate for the classes you created in [Step 2](Step2.md).
+# Step 3: Create Basic GraphQL Server
+
+In this step, you are going to create a very basic GraphQL server using HotChocolate for the classes you created in [Step 2](Step2.md).
 
 ## Register NuGet package
 
@@ -10,7 +11,7 @@ dotnet add package HotChocolate.AspNetCore
 ```
 
 ## Create folder GraphQL
-To keep the GraphQL code seperate from the rest of the code, you will have to create a folder named GraphQL in your project.
+To keep the GraphQL code separate from the rest of the code, you will have to create a folder named `GraphQL` in your project.
 
 ## Query class
 Fetching data can be done in GraphQL through a so called Query-class. This is a normal POCO class that does not require you to implement an interface or apply an attribute.

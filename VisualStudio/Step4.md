@@ -1,6 +1,6 @@
-# Step 4: Run basic query against own GraphQL Server
+# Step 4: Run Basic Query Against Your Own GraphQL Server
 
-In [step 3](./Step3.md) you have created a basic GraphQL server. In this step you are going to run queries against this server.
+In [Step 3](./Step3.md), you have created a basic GraphQL server. In this step, you are going to run queries against this server.
 
 ## Start your application
 The project is configured to start the GraphQL endpoint. This endpoint does launch Nitro. This is a testbed for testing your API.
@@ -9,9 +9,9 @@ The project is configured to start the GraphQL endpoint. This endpoint does laun
 
 To start creating a query, select the Create Document button.
 
-## Gnerated schema
+## Generated Schema
 
-GraphQL works through a schema. In this workshop we are not going to use the schema directly to write a service, but it is good to know a bit about the schema being used. In the Schema tab you can inspect the schema that has been generated based on the code you wrote.
+GraphQL works through a schema. In this workshop, we are not going to use the schema directly to write a service, but it is good to know a bit about the schema being used. In the Schema tab, you can inspect the schema that has been generated based on the code you wrote.
 
 ![Generated schema for query](./images/Schema%20main%20window.png)
 

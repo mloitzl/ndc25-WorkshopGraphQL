@@ -1,5 +1,6 @@
-# Step 2 Create Model classes
-In this step you are going to create the domain classes needed for this workshop.
+# Step 2: Create Model Classes
+
+In this step, you are going to create the domain classes needed for this workshop.
 
 ## Create model directory
 
@@ -44,7 +45,7 @@ public class Product
 }
 ```
 
-Now we have the supporting classed in place, we can focus on the Order specific class. First, add the OrderLine class to the project. Youo will integrate Entity Framework later in the workshop, so we already take this into account when creating the code for this OrderLine. So, we add both the Id and the reference to the Product class and the yet to be built Order class. In this code we suppress the nullablity check. 
+Now we have the supporting classes in place, we can focus on the Order-specific class. First, add the `OrderLine` class to the project. You will integrate Entity Framework later in the workshop, so we already take this into account when creating the code for this `OrderLine`. So, we add both the ID and the reference to the `Product` class and the yet-to-be-built `Order` class. In this code, we suppress the nullability check. 
 
 ```csharp
 namespace ShopAPI.Model;
