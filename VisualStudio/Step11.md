@@ -85,9 +85,7 @@ query allOrdersSorted {
 If you now run this query, you will get an output simular to the following picture.
 ![Output page 2](./images/Result%20pages%20page%202.png)
 
-## Extra excercise
 
-Update the seeding of the database where you add more orders to the database, create a new migration and update the database. Change the page size and create queries to return only a subset of the total result.
 
 
 [Next step](./Step12.md)
