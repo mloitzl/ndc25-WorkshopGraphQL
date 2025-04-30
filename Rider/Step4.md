@@ -23,7 +23,24 @@ When you click on the Order type, the details of the schema for Order are shown.
 
 ![Generated schema for order](./images/Order%20schema.png)
 
-Every field has it own type specified, and you could drill further into the types by clicking on the links. GraphQL supports scalar types and object types. If you want to know more about the GraphQL schema language, you can visit https://graphql.org/learn/schema/.
+Every field has it own type specified, and you could drill further into the types by clicking on the links. GraphQL supports scalar types, enum types, object types and lists.
+
+Schalar types include:
+- Int: A 32-bit integer.
+- Float: A double-precision floating-point number.
+- String: A UTF-8 character sequence.
+- Boolean: A true or false value.
+- ID: A unique identifier, often used for fetching objects.
+
+Our classes get generated as Object Types in GraphQL.
+
+A list is depicted with a [].
+
+Nullability is also supported. An exclamation mark (!) indicates that a field is not null.
+
+Enum types behave just like C#.
+
+If you want to know more about the GraphQL schema language, you can visit https://graphql.org/learn/schema/.
 
 ## Create order query
 
