@@ -1,4 +1,4 @@
-# Workshop building your own GraphQL server in .NET 8 Visual Studio Edition
+# Workshop building your own GraphQL server in .NET 9 Visual Studio Edition
 
 In this workshop you will build a GraphQL server in .NET. 
 
