@@ -57,6 +57,7 @@ query allOrdersPaged {
 ```
 
 Your output should look like this.
+
 ![Output paging page 1](./images/Result%20pages.png)
 
 In the result the information about the availability of a next and previous page is returned together with a cursor. This cursor can be used to fetch the next batch.
@@ -83,6 +84,7 @@ query allOrdersSorted {
 ```
 
 If you now run this query, you will get an output simular to the following picture.
+
 ![Output page 2](./images/Result%20pages%20page%202.png)
 
 This way you can fetch the next, or previous, set of records based on the current set.
