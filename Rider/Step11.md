@@ -1,4 +1,4 @@
-# Step 11 Adding paging
+# Step 11 Add paging support
 
 Many client applications do support paging in the user interface. So, it is good to provide support for paging in the service as well. 
 Paging in the current version of HotChocolate is based around streaming. In modern user interfaces this pattern is use more than the navigate by page number approach. In older versions of HotChocolate the default support for paging was using the skip and take pattern. 
