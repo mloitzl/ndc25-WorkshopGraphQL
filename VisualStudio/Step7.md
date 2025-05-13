@@ -19,7 +19,7 @@ After installing the list of packages should look like this.
 
 ## Create context
 
-Before we can connect GraphQL to Entity Framework Core you need to write a DataContext for this. Put this class is its own directory named Database. Since we want to retrieve data from the database, you will have to add seeding to the context.
+Before we can connect GraphQL to Entity Framework Core you need to write a DataContext for this. Put this class is its own directory named Database. Since we want to retrieve data from the database, you will add seeding to the context by specifying this data in the OnModelCreating method.
 
 Create a new folder named Database in your project. Create a new class named OrderContext and copy the contents below into this new class.
 
@@ -78,9 +78,13 @@ public class OrderContext : DbContext
 
 
 ```
+This context exposes Orders, OrderLines and Customers as sets to work with. In the workshop, we will only directly use the Orders set.
+
+The data seeding uses the ids of the objects to link objects together.
+
 
 ## Register context 
-With this DbContext in place, we can add the support for EntityFramework to our program.cs class.
+With this DbContext in place, we can add support for EntityFramework to our program.cs class.
 
 Just above the code that adds the GraphQLService, add the following code:
 
@@ -163,6 +167,6 @@ Now check the logging in the Output window of Visual Studio. You should see some
 
 ![Overfetching](./images/Overfetching.png)
 
-All the fields from the the database are still retrieved from the database, so there is still overfetching taking place. You are going to fix this in the [next step](./Step8.md).
+All the fields from the the database are still retrieved from the database, although they are not specified in the query. There is still overfetching taking place. You are going to fix this in the [next step](./Step8.md).
 
 

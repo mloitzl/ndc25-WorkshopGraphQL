@@ -25,7 +25,8 @@ builder.Services.AddGraphQLServer()
     .AddSorting();
 ```
 
-If you now run your code, we can make use of special sorting option is the GraphQL language.
+If you now run your code, we can make use of special sorting option is the GraphQL language. The keyword for this is order. Fields can be sorting in ascending or descending order.
+
 Add the following query to your request pane.
 
 ```graphql

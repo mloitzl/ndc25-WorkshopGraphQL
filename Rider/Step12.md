@@ -15,13 +15,13 @@ Create a Mutation class like the following code in your GraphQL folder.
 
 Just like the query you do not have to implement an attribute or derive from a base class.
 
-We want create a method to allow a new order to be received by the server, added to the database and then return to the caller.
+We want create a method to allow a new order to be received by the server, added to the database and then returned to the caller.
 
 The convention in HotChocolate is to create a Input class for the input parameter and a Payload class for the return value.
 
 Let's start creating these classes before adding the method.
 
-Create the following class. Name the file OrderInput.cs.
+Create the following class. Name the file OrderInput.cs. Place this file in your GraphQL folder.
 
 ```csharp
 
@@ -238,6 +238,6 @@ You can verify this by running the query to return the paged orders.
 Add some more different orders to the database and change the page size for [Step 12](./Step12.md) and verify that the cursors for next and previous page actually work.
 
 
-[Next step](./Step12.md)
+[Next step](./Step13.md)
 
 

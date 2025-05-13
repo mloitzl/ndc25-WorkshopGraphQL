@@ -10,6 +10,6 @@ You will learn how to:
 - Add filtering to the service.
 - Add sorting to the service.
 - Add paging to the service.
-- Add mutation to the service.
+- Add mutation functionality to the service.
 
 The entire workshop is divided into a number of steps. You should follow the steps in the indicated order. If you run into problems or have any questions, just ask Johan.

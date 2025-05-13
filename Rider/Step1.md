@@ -4,14 +4,14 @@ In this step, you are going to create an empty ASP.NET Core project to base the 
 
 
 ## Fork the repository to your own GitHub
-If you want to keep the sources you create during this workshop, I recommend forking the repository to your own GitHub environment.
+If you want to keep the sources you create during this workshop, I recommend forking the repository to your own GitHub environment. And of course pull this fork to your local disk.
 
 ## Create a new Empty Web project
 In the folder for this workshop, you will have to create a project and solution. Because HotCholocate has a very good integration with ASP.NET Core, we are going to use the Empty template to start with. 
 
 ![project template](./images/Create%20empty%20app.png)
 
-The description in this workshop uses the project name ShopAPI, so create a project with that name. You can give the solution the same name. Do make sure that you select the correct folder to create the solution and project in.
+The description in this workshop uses the project name ShopAPI, so create a project with that name. You can give the solution the same name. Do make sure you select your local sources folder, to create the solution and project in.
 
 In the additional settings, you should select .NET 9 as the framework. We are not going to use containers or .NET Aspire in the workshop, so leave these settings unchecked.
 

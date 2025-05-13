@@ -88,7 +88,7 @@ public class Order
 }
 ```
 
-The only thing that is missing from our domain classes is the enumeration for OrderStatus. 
+The only thing that is missing from our domain classes is the enumeration for OrderStatus. Create this enum in your project.
 
 ```csharp
 namespace ShopAPI.Model;

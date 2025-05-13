@@ -5,7 +5,7 @@ GraphQL also supports passing parameters to a query. To demonstrate this, we are
 
 ## Update code
 
-Add the following code to the OrderQuery class.
+Add the following method to the OrderQuery class.
 ```csharp
 public Order GetOrderById(int id)
 {
@@ -41,6 +41,8 @@ query getOrdersById {
   }
 }
 ```
+The parameter value can be passed after the field name.
+In this code you can see that you can name a query as well.
 
 An individual query can be run by clicking the Run button above the query.
 
@@ -57,7 +59,7 @@ Run this query and verify that the result looks like this image.
 
 ## Introduce parameter for GraphQL query
 
-The parameter can be passed between the rounded brackets. This parameter is now fixed for this query, but we also have the option to add the parameter to the query itself, like in the code below.
+This parameter value is now fixed for this query, but we also have the option to add the parameter to the query itself, like in the code below. 
 
 ```graphql
 query getOrdersById($id: Int!) {
@@ -77,7 +79,7 @@ query getOrdersById($id: Int!) {
 ```
 Update your query to match the one above.
 
-You can specify the parameter value to pass to the query, in the Variables pane.
+You can now specify the parameter value to pass to the query, in the Variables pane. Add this variable to your own pane.
 
 ![Query with parameter](./images/With%20passed%20parameter.png)
 

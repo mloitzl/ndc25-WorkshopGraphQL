@@ -25,7 +25,7 @@ public class OrderQuery
 ```
 
 ### Test data
-We do want to provide a method to allow the user of the API to fetch all orders. Since we don’t have a database yet, we do need to get a way to get a list of orders. We will implement a helper method within the OrderQuery class to generate a list of Orders. Create the following helper method in the Query class.
+We do want to provide a method to allow the user of the API to fetch all orders. Since we don’t have a database yet, we do need some way to get a list of orders. We will implement a helper method within the OrderQuery class to generate a list of Orders. Create the following helper method in the Query class.
 
 ```csharp
 private List<Order> GenerateTestOrders()
@@ -105,8 +105,10 @@ public IEnumerable<Order> GetAllOrders()
 }
 ```
 
+As you can see, this is just a normal method returning an IEnumberable, so nothing specific for GraphQL.
+
 ## Register GraphQL services
-For GraphQL to work, you need to register the GraphQL services and specify that you want to use the OrderQuery class as the Query for this server. Add the following code before the line with builder.Build() to achieve both these things.
+For GraphQL to work, you need to register the GraphQL server and specify that you want to use the OrderQuery class as the Query for this server. Add the following code before the line with builder.Build() to achieve both these things.
 
 ```csharp
 builder.Services.AddGraphQLServer()
@@ -114,7 +116,7 @@ builder.Services.AddGraphQLServer()
 ```
 
 ## Add to pipeline
-The server will have to be able to intercept GraphQL request. Therefore you need to add GraphQL to the pipeline. Add the following code before the line containing the app.Run().
+The server will have to be able to intercept GraphQL requests. Therefore you need to add GraphQL to the pipeline. Add the following code before the line containing the app.Run().
 
 ```csharp
 app.MapGraphQL();
@@ -124,7 +126,7 @@ This code will map the endpoint /graphql to your GraphQL code.
 
 ## Set the GraphQL endpoint as default for the project
 
-When building a GraphQL server, you will have to build and run the test environment many timees. Therfore it is convenient to register the GraphQL endpoint as default page to open when debugging the application. Add the following code to the lauchsettings.json file for the http and https endpoint.
+When building a GraphQL server, you will have to build and run the test environment many times. Therfore it is convenient to register the GraphQL endpoint as default page to open when debugging the application. Add the following code to the lauchsettings.json file for the http and https endpoint.
 
 ```json
 "launchUrl": "graphql",

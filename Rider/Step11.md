@@ -1,7 +1,7 @@
 # Step 11 Adding paging
 
 Many client applications do support paging in the user interface. So, it is good to provide support for paging in the service as well. 
-Paging in the current version of HotChocolate is based around streaming. In modern user interfaces this pattern is use more than the navigate by page number approach. In older version the default support for paging was using the skip and take pattern. 
+Paging in the current version of HotChocolate is based around streaming. In modern user interfaces this pattern is use more than the navigate by page number approach. In older versions of HotChocolate the default support for paging was using the skip and take pattern. 
 
 ## Change the code
 
@@ -35,7 +35,7 @@ builder.Services.AddGraphQLServer()
     });
 ```
 
-If you now run your run, you can use paging in your queries. The page information is returned with the fields pageInfo and edges. The cursor that is returned is needed to request the next or previous batch of objects.
+If you now run your query, you can use paging in your queries. The page information is returned with the fields pageInfo and edges. The cursor that is returned in edges is needed to request the next or previous batch of objects.
 
 Copy this query to your own request pane and run it.
 
@@ -85,10 +85,7 @@ query allOrdersSorted {
 If you now run this query, you will get an output simular to the following picture.
 ![Output page 2](./images/Result%20pages%20page%202.png)
 
-## Extra excercise
-
-Update the seeding of the database where you add more orders to the database, create a new migration and update the database. Change the page size and create queries to return only a subset of the total result.
-
+This way you can fetch the next, or previous, set of records based on the current set.
 
 [Next step](./Step12.md)
 
