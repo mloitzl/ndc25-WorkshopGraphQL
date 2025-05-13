@@ -48,4 +48,6 @@ The relationship between these classes is depicted in the following class diagra
 
 The code is based on .NET 9, so if you do not have this version installed, I would recommend doing this before starting the workshop.
 
+## Get started
+
 Well, let's start building the [GraphQL Server](./Step1.md).
