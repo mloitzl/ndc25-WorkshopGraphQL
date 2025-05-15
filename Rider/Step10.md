@@ -45,7 +45,7 @@ In the Output window you can see that the sorting is actually being done in the 
 
 ![Sort query](./images/Sort%20query.png)
 
-## Extra excercise
+## Extra exercise
 
 Change the query so that the results are sorted by descending orderTime.
 

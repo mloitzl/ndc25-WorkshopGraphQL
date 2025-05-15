@@ -233,7 +233,7 @@ You can verify this by running the query to return the paged orders.
 ![Created order](./images/VerifyMutationInDatabase.png)
 
 
-## Extra excercise
+## Extra exercise
 
 Add some more different orders to the database and change the page size for [Step 12](./Step12.md) and verify that the cursors for next and previous page actually work.
 

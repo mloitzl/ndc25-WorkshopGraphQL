@@ -48,7 +48,7 @@ Check the Output window. You can see that the query sent to the database does us
 
 ![Query logging for filtering](./images/Filtering%20works.png)
 
-## Extra Exercise
+## Extra exercise
 
 Add a query to select only those orders where all order lines contain more than 5 items.
 
