@@ -109,7 +109,8 @@ builder.Services.AddGraphQLServer()
 ## Migrations
 
 To start working with our database, we need to generate an initial migration. We will use the EF Core tooling in Rider for this.
-![Package Manager Console](./images/Packages%20Rider.png)
+
+![Add migration](./images/Create%20migration.png)
 
 Create an initial migration using this tool.
 
@@ -156,7 +157,7 @@ Run this query and verify that you see results matching the picture below
 
 ![Result query agains db](./images/Db%20connection%20result.png)
 
-Now check the logging in the Output window of Visual Studio. You should see something like this.
+Now check the logging in the Output window of Rider. You should see something like this.
 
 ![Overfetching](./images/Overfetching%20Rider.png)
 

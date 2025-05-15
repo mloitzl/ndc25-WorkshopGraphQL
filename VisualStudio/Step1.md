@@ -4,7 +4,7 @@ In this step, you are going to create an empty ASP.NET Core project to base the 
 
 
 ## Fork the repository to your own GitHub
-If you want to keep the sources you create during this workshop, I recommend forking the repository to your own GitHub environment. And of course pull this fork to your local disk.
+If you want to keep the workshop description for this workshop, I recommend forking the repository to your own GitHub environment. And of course pull this fork to your local disk.
 
 ## Create a new Empty Web project
 In the folder for this workshop, you will have to create a project and solution. Because HotCholocate has a very good integration with ASP.NET Core, we are going to use the Empty template to start with. 

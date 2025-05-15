@@ -88,7 +88,7 @@ public async Task<OrderPayload> CreateOrderAsync(OrderContext orderContext,
 As with most API code you have to do some mapping between the model Order and the received input and the created model order and the payload. 
 To keep the code in the mutation method limited, you can create seperate mapper helper methods for this. This mapper simply maps the individual fields and relationships to each other.
 
-Create an OrderExtension class in the GraphQL folder and copy the code below into this file. 
+Create an OrderExtensions class in the GraphQL folder and copy the code below into this file. 
 
 ```csharp
 
@@ -96,13 +96,13 @@ public static class OrderExtensions
     {
         public static Order ToOrder(this OrderInput orderInput)
         {
-            var customer = new Model.Customer()
+            var customer = new Customer()
             {
                 Name = orderInput.Customer.Name,
                 EMailAddress = orderInput.Customer.EMailAddress
             };
 
-            var order = new Model.Order()
+            var order = new Order()
             {
                 Customer = customer,
                 OrderStatus = Model.OrderStatus.NEW,
@@ -111,8 +111,8 @@ public static class OrderExtensions
 
             foreach (var orderline in orderInput.OrderLines)
             {
-                var product = new Model.Product() { Name = orderline.Product.Name };
-                var modelOrderLine = new Model.OrderLine()
+                var product = new Product() { Name = orderline.Product.Name };
+                var modelOrderLine = new OrderLine()
                 {
                     Product = product,
                     Quantity = orderline.Quantity
@@ -197,7 +197,7 @@ Add the following query to your Request pane.
 
 ```graphql
 
-mutation {
+mutation addOrder {
     createOrder(orderInput:  {
        customer:  {
           name: "Test insert through mutation"
