@@ -122,7 +122,7 @@ The server will have to be able to intercept GraphQL requests. Therefore you nee
 app.MapGraphQL();
 ```
 
-This code will map the endpoint /graphql to your GraphQL code.
+This code will map the endpoint /graphql to your GraphQL server.
 
 ## Set the GraphQL endpoint as default for the project
 
