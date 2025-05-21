@@ -62,7 +62,7 @@ Your output should look like this.
 
 In the result the information about the availability of a next and previous page is returned together with a cursor. This cursor can be used to fetch the next batch.
 
-Due to the change in the return type, the queries for the other features don't work any more without changing the response. 
+Due to the change in the return type, the queries for the other features don't work any more without changing the response. Because the other steps do require more than 1 response object, simply comment the line for the paging out, if you want to run these queries again.
 
 Copy the following query to your request pane, but do replace the value for the cursor with the returned value on you own machine. 
 
