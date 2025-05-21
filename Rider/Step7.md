@@ -93,7 +93,7 @@ builder.Services.AddDbContextFactory<OrderContext>(
        
 ```
 
-This will add the DbContext to the Services collection. We do need to add a context factory due to the inner workings of GraphQL. This framework can run parallel queries and if you just register the DbContext in the normal way, this will not work. To be able to see the entire logging of EF Core, EnableSensitiveDataLogging is enabled. Please do not add sensitive data logging in your own applications, but we now need it now to test some query features later on.
+This will add the DbContext to the Services collection. We do need to add a context factory due to the inner workings of HotChocolate. This framework can run parallel queries and if you just register the DbContext in the normal way, this will not work. To be able to see the entire logging of EF Core, EnableSensitiveDataLogging is enabled. Please do not add sensitive data logging in your own production applications, but we now need it now to test some query features later on.
 
 ## Add to HotChocolate
 

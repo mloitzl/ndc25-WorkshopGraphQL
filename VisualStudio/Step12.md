@@ -85,7 +85,7 @@ public async Task<OrderPayload> CreateOrderAsync(OrderContext orderContext,
 
 ```
 
-As with most API code you have to do some mapping between the model Order and the received input and the created model order and the payload. 
+As with most API code you have to do some mapping between the model `Order` and the received input and the created model `Order` and the payload. 
 To keep the code in the mutation method limited, you can create seperate mapper helper methods for this. This mapper simply maps the individual fields and relationships to each other.
 
 Create an OrderExtensions class in the GraphQL folder and copy the code below into this file. 
@@ -158,12 +158,12 @@ public async Task<OrderPayload> CreateOrderAsync(OrderContext orderContext,
 
 ```
 
-All the mutation code has to do, is calls the mappers and add the created object to EF Core and return the created object.
+All the mutation code has to do, is call the mappers and add the created object to EF Core and return the created object.
 
 
 ## Register the mutation type
 
-All you to do now is register the mutation type with the GraphQL Service.
+You still do need to register the mutation type with the GraphQL Service.
 
 Update the code in your program.cs to match the following code.
 

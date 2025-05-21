@@ -23,7 +23,7 @@ builder.Services.AddGraphQLServer()
     .AddFiltering();
 ```
 
-If you now run your code, we can make use of special filter option is the GraphQL language.
+If you now run your code, you can make use of special filter option that is part of the GraphQL language.
 
 Add the following query to your request pane.
 

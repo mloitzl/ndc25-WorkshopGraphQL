@@ -26,11 +26,11 @@ Both projects are very good for building GraphQL servers. HotChocolate has a som
 ## HotChocolate
 
 HotChocolate can use three different approaches for building GraphQL Servers:
-1. Implementation-first
-2. Code-first
-3. Schema-first
+1. Schema-first: the server is based on the GraphQL language and C# code is derived from this.
+2. Code-first: the necessary classes for the mapping of C# and the GraphQL types are coded by hand.
+3. Implementation-first: the GraphQL specific code is generated from POCO-classes.
 
-The first option requires the least amount of specific GraphQL code in your solution, while maintaining enough flexibility. During this workshop we will use this option.
+The last option requires the least amount of specific GraphQL code in your solution, while maintaining enough flexibility. During this workshop we will use this option.
 
 ## What are we going to build
 

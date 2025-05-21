@@ -122,11 +122,11 @@ The server will have to be able to intercept GraphQL requests. Therefore you nee
 app.MapGraphQL();
 ```
 
-This code will map the endpoint /graphql to your GraphQL server.
+This code will map the endpoint /graphql to your routing table.
 
 ## Set the GraphQL endpoint as default for the project
 
-When building a GraphQL server, you will have to build and run the test environment many times. Therfore it is convenient to register the GraphQL endpoint as default page to open when debugging the application. Add the following code to the lauchsettings.json file for the http and https endpoint.
+When building a GraphQL server, you will have to build and run the test environment many times. Therefore it is convenient to register the GraphQL endpoint as default page to open when debugging the application. Add the following code to the lauchsettings.json file for the http and https endpoint.
 
 ```json
 "launchUrl": "graphql",

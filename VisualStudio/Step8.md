@@ -2,7 +2,7 @@
 
 Fortunately, HotChocolate has a good option to prevent overfetching. All you need for this is to apply an attribute. But because the queries you write during this workshop are meant to be usable as a reference afterward, you are creating a new method for this. 
 
-Copy the following code to your query. The `UseProjection` attribute is all that you need to instruct HotChocolate to limit the fields that are requested from the database. This attribute does require you to return an `IQueryable`. And because of this return type, you can simply return the Orders from the context.
+Copy the following code to your query. The `UseProjection` attribute is all that you need to instruct HotChocolate to limit the fields that are requested from the database. This attribute does require you to return an `IQueryable`. And because of this return type, you can simply return the Orders from the context, without all the includes.
 
 ```csharp
 [UseProjection]

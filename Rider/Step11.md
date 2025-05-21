@@ -1,7 +1,7 @@
 # Step 11 Add paging support
 
 Many client applications do support paging in the user interface. So, it is good to provide support for paging in the service as well. 
-Paging in the current version of HotChocolate is based around streaming. In modern user interfaces this pattern is use more than the navigate by page number approach. In older versions of HotChocolate the default support for paging was using the skip and take pattern. 
+Paging in the current version of HotChocolate is based on streaming. In modern user interfaces this pattern is more common than the navigate by page number approach. In older versions of HotChocolate the default support for paging was using the skip and take pattern. 
 
 ## Change the code
 
@@ -19,7 +19,7 @@ public IQueryable<Order> GetOrders(OrderContext orderContext) => orderContext.Or
 
 A default pagesize of 1 is of course not very usefull, but because we only use a small test set during this workshop, this value is chosen on purpose to demonstrate the use of cursors.
 
-Adding support for paging does not require a change in the program.cs. You can however specify the default page size. This would like the following code. You do not need to change your code. The code is just shown as an example.
+Adding support for paging does not require a change in the program.cs. You can however specify the default page size. This would look like the following code. You do **not** need to change your code. The code is just shown as an example.
 
 ```csharp
 builder.Services.AddGraphQLServer()
@@ -64,7 +64,7 @@ In the result the information about the availability of a next and previous page
 
 Due to the change in the return type, the queries for the other features don't work any more without changing the response. 
 
-Copy the following query to your request pane, but do replace the value for the cursor with the returned value from the previous query. 
+Copy the following query to your request pane, but do replace the value for the cursor with the returned value on you own machine. 
 
 ```graphql
 query allOrdersSorted {
