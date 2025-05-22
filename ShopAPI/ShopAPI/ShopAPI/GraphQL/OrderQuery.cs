@@ -1,9 +1,25 @@
+using Microsoft.EntityFrameworkCore;
+using ShopAPI.Database;
 using ShopAPI.Model;
 
 namespace ShopAPI.GraphQL;
 
 public class OrderQuery
 {
+    [UsePaging(DefaultPageSize = 1)]
+    [UseProjection]
+    [UseFiltering]
+    [UseSorting]
+    public IQueryable<Order> GetOrders(OrderContext orderContext) => orderContext.Orders;
+
+    public IEnumerable<Order> GetOrdersEnumerable(OrderContext orderContext)
+    {
+        return orderContext.Orders
+            .Include(order => order.OrderLines)
+            .ThenInclude(orderline => orderline.Product)
+            .Include(order => order.Customer);
+    }
+
     public Order GetOrderById(int id)
     {
         return GenerateTestOrders().Single(order => order.Id == id);
